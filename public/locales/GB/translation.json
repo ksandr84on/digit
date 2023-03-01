@@ -1,0 +1,13 @@
+{
+    "nav": {
+      "about": "About",
+      "process": "Process",
+      "services": "Services",
+      "team": "Team",
+      "contacts": "Contact Us"
+    },
+    "hero": {
+      "tittle1": "Digit Technology Solutions",
+      "tittle2": "We collaborate with organizations to build innovative technology solutions that drive results"
+    }
+  }

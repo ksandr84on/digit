@@ -5,13 +5,12 @@ import { animateScroll as scroll } from 'react-scroll';
 import { Nav, NavbarContainer, NavLogo, Lang1, Lang, MobileIcon, NavMenu, NavItem, NavLinks, LogoIcon } from './NavbarElements';
 import LogoTop from '../../images/logo.svg';
 import { useTranslation } from 'react-i18next';
-import i18n from  'i18next';
+
 import ReactFlagsSelect from "react-flags-select";
 
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, changeLanguage, language}) => {
   const [scrollNav, setScrollNav] = useState(false);
-  const [selected, setSelected] = useState("GB");
 
   const { t } = useTranslation();
 
@@ -44,29 +43,32 @@ const Navbar = ({ toggle }) => {
             </MobileIcon>
             <NavMenu>
               <NavItem>
-                <NavLinks to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>{t('nav_about.text')}</NavLinks>
+                <NavLinks to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>{t('nav.about')}</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="process" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Our Process</NavLinks>
+                <NavLinks to="process" smooth={true} duration={500} spy={true} exact='true' offset={-80}>{t('nav.process')}</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="services" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Services</NavLinks>
+                <NavLinks to="services" smooth={true} duration={500} spy={true} exact='true' offset={-80}>{t('nav.services')}</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="team" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Our Team</NavLinks>
+                <NavLinks to="team" smooth={true} duration={500} spy={true} exact='true' offset={-80}>{t('nav.team')}</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="contact" smooth={true} duration={500} spy={true} exact='true' offset={-80}>Contact Us</NavLinks>
+                <NavLinks to="contact" smooth={true} duration={500} spy={true} exact='true' offset={-80}>{t('nav.contacts')}</NavLinks>
               </NavItem>
               <Lang>
   <ReactFlagsSelect
     countries={["GB", "RU"]}
-    customLabels={{ GB: "English", RU: "Russian"}}
-    placeholder="Language"
-    selected={selected}
+    customLabels={{ GB: "EN", RU: "RU"}}
+    placeholder=""
+    selected={language}
     onSelect={(code) => {
-      setSelected(code)
-      i18n.changeLanguage(code)
+   
+   
+        changeLanguage(code)
+ 
+      
     }}
   />
   </Lang>

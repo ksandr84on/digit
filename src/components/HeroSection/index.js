@@ -2,17 +2,19 @@ import React, { useState } from 'react';
 import Video from './video.mp4';
 import { Button } from '../ButtonElements';
 import { HeroContainer, HeroBg, Lang2, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
-import i18n from  'i18next';
-import ReactFlagsSelect from "react-flags-select";
 
-const HeroSection = () => {
+import ReactFlagsSelect from "react-flags-select";
+import { useTranslation } from 'react-i18next';
+
+const HeroSection = ({changeLanguage, language}) => {
   const [hover, setHover] = useState(false)
+  const { t } = useTranslation();
 
   const onHover = () => {
     setHover(!hover)
   }
 
-  const [selected, setSelected] = useState("GB");
+
 
   return (
     <HeroContainer id='home'>
@@ -20,10 +22,10 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
-        <HeroH1>Digit Technology Solutions</HeroH1>
+        <HeroH1>{t('hero.tittle1')}</HeroH1>
         <HeroP>
           {/* IT Systems Integration &<br /> Infrastructure Design Solutions */}
-          We collaborate with organizations to build innovative technology solutions that drive results
+          {t('hero.tittle2')}
         </HeroP>
         <HeroBtnWrapper>
           <Button to='about'
@@ -41,12 +43,11 @@ const HeroSection = () => {
      
         <Lang2> <ReactFlagsSelect
     countries={["GB", "RU"]}
-    customLabels={{ GB: "En", RU: "Ru"}}
+    customLabels={{ GB: "EN", RU: "RU"}}
     placeholder=""
-    selected={selected}
+    selected={language}
     onSelect={(code) => {
-      setSelected(code)
-      i18n.changeLanguage(code)
+      changeLanguage(code)
     }}
   /> </Lang2>
       </HeroContent>
