@@ -15,7 +15,7 @@ const Sidebar = ({ isOpen, toggle }) => {
           <SidebarLink to='team' onClick={toggle}>Our Team</SidebarLink>
         </SidebarMenu>
         <SideBtnWrap>
-          <SidebarRoute to='gloria.karlinchak@gmail.com'>Contact Us</SidebarRoute>
+          <SidebarRoute to=''>Contact Us</SidebarRoute>
         </SideBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

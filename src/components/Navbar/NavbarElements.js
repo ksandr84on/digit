@@ -109,8 +109,19 @@ margin-top: 0.5rem;
 
   cursor: pointer;
 
+`;
 
+export const Lang1 = styled.nav`
+ 
+transform: translate(-50%, 25%);
 
+  cursor: pointer;
+
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
 
 `;
 

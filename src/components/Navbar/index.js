@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
-import { Nav, NavbarContainer, NavLogo, Lang, MobileIcon, NavMenu, NavItem, NavLinks, LogoIcon } from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo, Lang1, Lang, MobileIcon, NavMenu, NavItem, NavLinks, LogoIcon } from './NavbarElements';
 import LogoTop from '../../images/logo.svg';
 import { useTranslation } from 'react-i18next';
 import i18n from  'i18next';
@@ -39,6 +39,18 @@ const Navbar = ({ toggle }) => {
           <NavbarContainer>
             {/* <NavLogo to="/" onClick={toggleHome}>Digit Company</NavLogo> */}
             <LogoIcon to="/" src={LogoTop} onClick={toggleHome} alt='IT consulting'/>
+          
+           <Lang1> <ReactFlagsSelect
+    countries={["GB", "RU"]}
+    customLabels={{ GB: " ", RU: " "}}
+    placeholder=""
+    selected={selected}
+    onSelect={(code) => {
+      setSelected(code)
+      i18n.changeLanguage(code)
+    }}
+  /> </Lang1>
+          
             <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>
