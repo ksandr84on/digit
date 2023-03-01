@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import Video from './video.mp4';
 import { Button } from '../ButtonElements';
-import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
+import { HeroContainer, HeroBg, Lang2, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
+import i18n from  'i18next';
+import ReactFlagsSelect from "react-flags-select";
 
 const HeroSection = () => {
   const [hover, setHover] = useState(false)
@@ -9,6 +11,8 @@ const HeroSection = () => {
   const onHover = () => {
     setHover(!hover)
   }
+
+  const [selected, setSelected] = useState("GB");
 
   return (
     <HeroContainer id='home'>
@@ -34,7 +38,19 @@ const HeroSection = () => {
             Learn More {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
+     
+        <Lang2> <ReactFlagsSelect
+    countries={["GB", "RU"]}
+    customLabels={{ GB: "En", RU: "Ru"}}
+    placeholder=""
+    selected={selected}
+    onSelect={(code) => {
+      setSelected(code)
+      i18n.changeLanguage(code)
+    }}
+  /> </Lang2>
       </HeroContent>
+
     </HeroContainer>
   )
 }

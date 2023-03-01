@@ -38,19 +38,7 @@ const Navbar = ({ toggle }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             {/* <NavLogo to="/" onClick={toggleHome}>Digit Company</NavLogo> */}
-            <LogoIcon to="/" src={LogoTop} onClick={toggleHome} alt='IT consulting'/>
-          
-           <Lang1> <ReactFlagsSelect
-    countries={["GB", "RU"]}
-    customLabels={{ GB: " ", RU: " "}}
-    placeholder=""
-    selected={selected}
-    onSelect={(code) => {
-      setSelected(code)
-      i18n.changeLanguage(code)
-    }}
-  /> </Lang1>
-          
+            <LogoIcon to="/" src={LogoTop} onClick={toggleHome} alt='IT consulting'/>          
             <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>

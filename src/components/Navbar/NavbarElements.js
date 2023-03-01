@@ -113,7 +113,7 @@ margin-top: 0.5rem;
 
 export const Lang1 = styled.nav`
  
-transform: translate(-50%, 25%);
+
 
   cursor: pointer;
 

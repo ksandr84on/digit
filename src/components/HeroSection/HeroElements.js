@@ -54,6 +54,20 @@ export const HeroContent = styled.div`
   align-items: center;
 `;
 
+export const Lang2 = styled.nav`
+ 
+margin-top: 24px;
+
+  cursor: pointer;
+
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+  }
+
+`;
+
 export const HeroH1 = styled.h1`
   color: #fff;
   font-size: 48px;
