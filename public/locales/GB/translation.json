@@ -9,5 +9,8 @@
     "hero": {
       "tittle1": "Digit Technology Solutions",
       "tittle2": "We collaborate with organizations to build innovative technology solutions that drive results"
+    },
+    "main": {
+      "learnmore" : "Learn More"
     }
   }

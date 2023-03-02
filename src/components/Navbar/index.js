@@ -4,6 +4,7 @@ import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
 import { Nav, NavbarContainer, NavLogo, Lang1, Lang, MobileIcon, NavMenu, NavItem, NavLinks, LogoIcon } from './NavbarElements';
 import LogoTop from '../../images/logo.svg';
+import LogoTopRu from '../../images/logoru.svg';
 import { useTranslation } from 'react-i18next';
 
 import ReactFlagsSelect from "react-flags-select";
@@ -13,7 +14,6 @@ const Navbar = ({ toggle, changeLanguage, language}) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const { t } = useTranslation();
-
 
   const changeNav = () => {
     if(window.scrollY >= 80) {
@@ -37,7 +37,11 @@ const Navbar = ({ toggle, changeLanguage, language}) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             {/* <NavLogo to="/" onClick={toggleHome}>Digit Company</NavLogo> */}
-            <LogoIcon to="/" src={LogoTop} onClick={toggleHome} alt='IT consulting'/>          
+            { (language==="RU") ? (  <LogoIcon to="/" src={LogoTopRu} onClick={toggleHome} alt='IT consulting'/>) : 
+            (  <LogoIcon to="/" src={LogoTop} onClick={toggleHome} alt='IT consulting'/>)
+            
+            }
+            {/* <LogoIcon to="/" src={LogoTop} onClick={toggleHome} alt='IT consulting'/> */}
             <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>

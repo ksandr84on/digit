@@ -37,7 +37,7 @@ const HeroSection = ({changeLanguage, language}) => {
           duration={500}
           spy={true}
           exact="true">
-            Learn More {hover ? <ArrowForward /> : <ArrowRight />}
+            {t('main.learnmore')} {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
      
