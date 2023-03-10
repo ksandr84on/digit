@@ -24,8 +24,8 @@
       react: { 
       useSuspense: false //   <---- this will do the magic
     },
-      lng: 'GB',
-      fallbackLng: 'GB',
+      lng: 'RU',
+      fallbackLng: 'RU',
       debug: true,
   
       interpolation: {

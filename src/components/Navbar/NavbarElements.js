@@ -47,7 +47,6 @@ export const LogoIcon = styled.img`
   cursor: pointer;
   display: flex;
   align-items: center;
-  margin-left: 24px;
   margin-bottom: 10px
   margin-top: 10px;;
 `;
@@ -55,7 +54,7 @@ export const LogoIcon = styled.img`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 850px) {
     display: block;
     position: absolute;
     top: 0;
@@ -71,9 +70,9 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
+  margin-right: 10px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 850px) {
     display: none;
   }
 `;
@@ -112,8 +111,6 @@ margin-top: 0.5rem;
 `;
 
 export const Lang1 = styled.nav`
- 
-
 
   cursor: pointer;
 
@@ -154,3 +151,42 @@ export const NavBtnLink = styled(LinkR)`
     color: #010606;
   }
 `
+
+export const DropDown = styled.div`
+position: relative;
+display: inline-block;
+&:hover {
+    display: block;
+    >div{
+        display:block;
+    }
+}
+`
+
+export const DropDownContent = styled.div`
+background: #1c2237;
+display: none;
+position: absolute;
+min-width: 270px;
+padding: 22px 16px;
+box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
+z-index: 1;
+`
+
+export const NavLinksD = styled(LinkS)`
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 8px 0px;
+  height: 100%;
+  cursor: pointer;
+
+  &:hover {
+    color: #06C2B9;
+  }
+
+  &.active {
+    border-bottom: 3px solid #06C2B9;
+  }
+`;

@@ -12,7 +12,7 @@ import i18n from "../i18n";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [language,setLanguage] = useState('GB')
+  const [language,setLanguage] = useState('RU')
 
 
   const toggle = () => {

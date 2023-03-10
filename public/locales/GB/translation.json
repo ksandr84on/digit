@@ -4,7 +4,11 @@
       "process": "Process",
       "services": "Services",
       "team": "Team",
-      "contacts": "Contact Us"
+      "contacts": "Contact Us",
+      "consulting": "IT Consulting",
+      "equipment": "Equipment Supply",
+      "development": "Software Development"
+
     },
     "hero": {
       "tittle1": "Digit Technology Solutions",
