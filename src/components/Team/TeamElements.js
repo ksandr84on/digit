@@ -20,7 +20,7 @@ export const TeamWrapper = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 16px; /* sets the gaps (gutters) between rows and columns; shorthand for row-gap and column-gap */
-  padding: 0 50px;
+
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
@@ -61,7 +61,7 @@ export const TeamIcon = styled.img`
 
 export const TeamH1 = styled.h1`
   font-size: 2.5rem;
-  margin-top: 150px;
+  margin-top: 120px;
   margin-bottom: 64px;
   color: #010606;
 
