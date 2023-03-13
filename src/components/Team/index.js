@@ -11,6 +11,7 @@ import { TeamContainer, TeamH1, TeamWrapper, TeamCard, TeamIcon, TeamH2, TeamP }
 
 const Team = () => {
   const { t } = useTranslation();
+
   return (
     <TeamContainer id='whyus'>
       <TeamH1>{t('chooseus.tittle')}</TeamH1>

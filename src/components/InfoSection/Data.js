@@ -26,7 +26,7 @@ export const homeObjTwo = {
   description: 'blabla',
   buttonLabel: 'Learn More',
   imgStart: true,
-  img: require('../../images/svg-4.svg').default,
+  img: require('../../images/was.svg').default,
   alt: 'our process',
   dark: false,
   primary: false,

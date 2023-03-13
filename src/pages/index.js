@@ -8,6 +8,7 @@ import Team from '../components/Team';
 import Footer from '../components/Footer';
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
 import About from '../components/About'
+import TeamNew from '../components/TeamNew'
 
 
 
@@ -29,7 +30,8 @@ const Home = () => {
       <HeroSection />
       <About />
       <Team />
-      <InfoSection {...homeObjTwo} />
+      {/* <InfoSection {...homeObjTwo} /> */}
+      <TeamNew />
      
       <Services />
     

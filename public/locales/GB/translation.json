@@ -8,7 +8,10 @@
       "consulting": "IT Consulting",
       "equipment": "Equipment Supply",
       "development": "Software Development",
-      "home": "Home"
+      "home": "Home",
+      "iteq": "IT equipment",
+      "labeq": "Educational & Labs Equipment",
+      "stageeq": "Stage & Media Equipment"
 
     },
     "hero": {
@@ -22,22 +25,30 @@
       "tittle": "Who We Are",
       "tittle2": "About Digit Company",
       "main": "We are an IT Consultancy, Equipment supplier and Software developer based in the Moscow, Russia. Our company operates in B2G and B2B markets since 2017 and has more than 200 successfully realized projects. We tailor our solutions to meet your unique needs, goals and expectations",
-      "button": "Our secret"
+      "button": "Our Secret"
 
     },
-    "chooseus": {
-      "tittle": "Why choose us?",
-      "reliability": "Reliability",
-      "reliability2": "We are supply equipment and develop software that meet high quality and safety standards",
-      "punctuality": "Punctuality",
-      "punctuality2": "Delivering your project on time",
-      "service": "Service",
-      "service2": "Create a solution tailored exactly to your task",
-      "flex": "Flexibility",
-      "flex2": "Be inventive even when there seems to be no obvious solution",
-      "support": "Support",
-      "support2": "We support the entire project, from requesting to commissioning the solution",
-      "team": "Team",
-      "team2": "Our team consists of over 50 highly qualified specialists"
+    "teamnew": {
+      "tittle": "Team",
+      "tittle2": "Digit, LLC",
+      "main": "All our employees have experience of working on both large-scale socially significant projects and non-traditional requests. We have been involved in projects from software development for federal agencies of the Russian Federation to the equipment of the mobile planetarium at the children's technology park 'Quantorium'",
+      "button": "Our Services"
+
+    },
+
+    "services": {
+      "tittle": "Our Services",
+      "it": "IT Equipment and Supplies",
+      "it2": "Computers, software, hardware and other IT related supplies and peripherals ",
+      "lab": "Educational and Lab Equipment",
+      "lab2": "Science Equipment and Supplies for Homeschool, Classroom and Laboratories",
+      "stage": "Stage and Media Equipment",
+      "stage2": "Pro Lighting, Stage Equipment and Sound Systems",
+      "soft": "Software development",
+      "soft2": "Our experts specialize in custom software development for B2B and B2G markets",
+      "consult": "IT Consulting",
+      "consult2": "From designing and developing technology to implementing and managing systems or processes"
+
     }
+    
   }

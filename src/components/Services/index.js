@@ -2,31 +2,58 @@ import React from 'react';
 import Icon1 from '../../images/svg-5.svg';
 import Icon2 from '../../images/svg-2.svg';
 import Icon5 from '../../images/svg-7.svg';
-
-import { ServicesContainer, ServicesH1, ServicesWrapper, ServicesCard, ServicesIcon, ServicesH2, ServicesP } from './ServicesElements';
+import Icon7 from '../../images/svg-8.svg';
+import Icon8 from '../../images/svg-4.svg';
+import { useTranslation } from 'react-i18next';
+import { ServicesContainer, ServicesH1, LinkR, ServicesWrapper, ServicesWrapper2, ServicesCard, ServicesIcon, ServicesH2, ServicesP } from './ServicesElements';
 
 const Services = () => {
+  const { t } = useTranslation();
   return (
     <ServicesContainer id='services'>
-      <ServicesH1>Our Services</ServicesH1>
+      <ServicesH1>{t('services.tittle')}</ServicesH1>
       <ServicesWrapper>
+        <LinkR href="/it-equipment">
         <ServicesCard>
-          <ServicesIcon src={Icon2} alt='IT consulting'/>
-          <ServicesH2>IT Consulting</ServicesH2>
-          <ServicesP>From designing and developing technology to implementing and managing systems or processes
+          <ServicesIcon src={Icon2} alt=''/>
+          <ServicesH2>{t('services.it')}</ServicesH2>
+          <ServicesP>{t('services.it2')}
           </ServicesP>
         </ServicesCard>
+        </LinkR>
+        <LinkR href="/labs-equipment">
         <ServicesCard>
-          <ServicesIcon src={Icon5} alt='network security'/>
-          <ServicesH2>Equipment Supply</ServicesH2>
-          <ServicesP>We partner with the world's leading technology manufacturers to bring you the best Equipment</ServicesP>
+          <ServicesIcon src={Icon7} alt=''/>
+          <ServicesH2>{t('services.lab')}</ServicesH2>
+          <ServicesP>{t('services.lab2')}
+          </ServicesP>
         </ServicesCard>
+        </LinkR>
+        <LinkR href="/stage-equipment">
         <ServicesCard>
-          <ServicesIcon src={Icon1} alt='cloud solutions'/>
-          <ServicesH2>Software development</ServicesH2>
-          <ServicesP>Our experts specialize in custom software development for B2B and B2G markets</ServicesP>
+          <ServicesIcon src={Icon5} alt=''/>
+          <ServicesH2>{t('services.stage')}</ServicesH2>
+          <ServicesP>{t('services.stage2')}</ServicesP>
         </ServicesCard>
-      </ServicesWrapper>
+        </LinkR>
+        </ServicesWrapper>
+        <ServicesWrapper2>
+        <LinkR href="/development">
+        <ServicesCard>
+          <ServicesIcon src={Icon1} alt=''/>
+          <ServicesH2>{t('services.soft')}</ServicesH2>
+          <ServicesP>{t('services.soft2')}</ServicesP>
+        </ServicesCard>
+        </LinkR>
+        <LinkR href="/consulting">
+        <ServicesCard>
+          <ServicesIcon src={Icon8} alt=''/>
+          <ServicesH2>{t('services.consult')}</ServicesH2>
+          <ServicesP>{t('services.consult2')}
+          </ServicesP>
+        </ServicesCard>
+        </LinkR>
+      </ServicesWrapper2>
     </ServicesContainer>
   )
 }

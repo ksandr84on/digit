@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const TeamContainer = styled.div`
-padding-top: 60px;
+
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -47,7 +47,7 @@ export const TeamCard = styled.div`
   &:hover {
     transform: scale(1.02);
     transition: all 0.2s ease-in-out;
-    cursor: pointer;
+   
   }
 `;
 
@@ -61,6 +61,7 @@ export const TeamIcon = styled.img`
 
 export const TeamH1 = styled.h1`
   font-size: 2.5rem;
+  margin-top: 150px;
   margin-bottom: 64px;
   color: #010606;
 

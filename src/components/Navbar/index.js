@@ -58,9 +58,13 @@ const Navbar = ({ toggle }) => {
               <DropDown>
                       <NavLinksR exact to="/services">{t('nav.services')} <BiChevronDown /></NavLinksR>
                       <DropDownContent>
+                      <NavLinksR to ='/it-equipment'>{t('nav.iteq')}</NavLinksR>
+                      <NavLinksR to ='/labs-equipment'>{t('nav.labeq')}</NavLinksR>
+                      <NavLinksR to ='/stage-equipment'>{t('nav.stageeq')}</NavLinksR>
+                          <NavLinksR to ='/development'>{t('nav.development')}</NavLinksR>    
                           <NavLinksR to ='/consulting'>{t('nav.consulting')}</NavLinksR>
-                          <NavLinksR to ='/equipment'>{t('nav.equipment')}</NavLinksR>
-                          <NavLinksR to ='/development'>{t('nav.development')}</NavLinksR>
+                         
+                         
                        </DropDownContent>
               </DropDown>
              
