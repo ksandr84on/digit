@@ -17,5 +17,27 @@
     },
     "main": {
       "learnmore" : "Learn More"
+    },
+    "about": {
+      "tittle": "Who We Are",
+      "tittle2": "About Digit Company",
+      "main": "We are an IT Consultancy, Equipment supplier and Software developer based in the Moscow, Russia. Our company operates in B2G and B2B markets since 2017 and has more than 200 successfully realized projects. We tailor our solutions to meet your unique needs, goals and expectations",
+      "button": "Our secret"
+
+    },
+    "chooseus": {
+      "tittle": "Why choose us?",
+      "reliability": "Reliability",
+      "reliability2": "We are supply equipment and develop software that meet high quality and safety standards",
+      "punctuality": "Punctuality",
+      "punctuality2": "Delivering your project on time",
+      "service": "Service",
+      "service2": "Create a solution tailored exactly to your task",
+      "flex": "Flexibility",
+      "flex2": "Be inventive even when there seems to be no obvious solution",
+      "support": "Support",
+      "support2": "We support the entire project, from requesting to commissioning the solution",
+      "team": "Team",
+      "team2": "Our team consists of over 50 highly qualified specialists"
     }
   }
