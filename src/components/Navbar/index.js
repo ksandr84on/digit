@@ -1,35 +1,30 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
 import { animateScroll as scroll } from 'react-scroll';
-import { Nav, NavbarContainer, Lang, MobileIcon, NavMenu, NavItem, NavLinks, LogoIcon,
-          DropDown, NavLinksD, DropDownContent } from './NavbarElements';
+import { Nav, NavLinksR, NavLinksLogo, NavbarContainer, Lang, MobileIcon, NavMenu, NavItem, LogoIcon,
+          DropDown, DropDownContent } from './NavbarElements';
 import LogoTop from '../../images/logo.svg';
 import LogoTopRu from '../../images/logoru.svg';
 import { useTranslation } from 'react-i18next';
 import {BiChevronDown} from 'react-icons/bi'
 
-
+import i18n from "../../i18n";
 import ReactFlagsSelect from "react-flags-select";
 
 
 
-const Navbar = ({ toggle, changeLanguage, language}) => {
-  const [scrollNav, setScrollNav] = useState(false);
+const Navbar = ({ toggle }) => {
+
+
+
+  const changeLanguage = (e) => {
+   
+    i18n.changeLanguage(e)
+    console.log(e);
+  }
 
   const { t } = useTranslation();
-
-  const changeNav = () => {
-    if(window.scrollY >= 80) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', changeNav)
-  }, []);
 
   const toggleHome = () => {
     scroll.scrollToTop();
@@ -40,47 +35,45 @@ const Navbar = ({ toggle, changeLanguage, language}) => {
   return (
     <>
       <IconContext.Provider value={{ color: '#fff'}}>
-        <Nav scrollNav={scrollNav}>
+        <Nav scrollNav='false'>
           <NavbarContainer>
-        
-            { (language==="RU") ? 
-            (  <LogoIcon to="/" src={LogoTopRu} onClick={toggleHome} alt='IT consulting'/>) : 
-            (  <LogoIcon to="/" src={LogoTop} onClick={toggleHome} alt='IT consulting'/>) 
+   <NavLinksLogo exact to="/">
+            { (i18n.language==="RU") ? 
+            (  <LogoIcon src={LogoTopRu} onClick={toggleHome}/>) : 
+            (  <LogoIcon src={LogoTop} onClick={toggleHome}/>) 
             }
-       
+            </NavLinksLogo>
+    
             <MobileIcon onClick={toggle}>
               <FaBars />
             </MobileIcon>
 
             <NavMenu>
+         
               <NavItem>
-                <NavLinks to="about" smooth={true} duration={500} spy={true} exact='true' offset={-80}>{t('nav.about')}</NavLinks>
+                <NavLinksR exact to="/">{t('nav.home')}</NavLinksR>
               </NavItem>
-              <NavItem>
-                <NavLinks to="process" smooth={true} duration={500} spy={true} exact='true' offset={-80}>{t('nav.process')}</NavLinks>
-              </NavItem>
+             
           
               <DropDown>
-                      <NavLinks to ='services' smooth={true} duration={500} exact='true'>{t('nav.services')} <BiChevronDown /></NavLinks>
+                      <NavLinksR exact to="/services">{t('nav.services')} <BiChevronDown /></NavLinksR>
                       <DropDownContent>
-                          <NavLinksD to ='sobrenosotros'>{t('nav.consulting')}</NavLinksD>
-                          <NavLinksD to ='descubre'>{t('nav.equipment')}</NavLinksD>
-                          <NavLinksD to ='contactenos'>{t('nav.development')}</NavLinksD>
+                          <NavLinksR to ='/consulting'>{t('nav.consulting')}</NavLinksR>
+                          <NavLinksR to ='/equipment'>{t('nav.equipment')}</NavLinksR>
+                          <NavLinksR to ='/development'>{t('nav.development')}</NavLinksR>
                        </DropDownContent>
               </DropDown>
              
+             
               <NavItem>
-                <NavLinks to="team" smooth={true} duration={500} spy={true} exact='true' offset={-80}>{t('nav.team')}</NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to="contact" smooth={true} duration={500} spy={true} exact='true' offset={-80}>{t('nav.contacts')}</NavLinks>
+                <NavLinksR exact to="/contacts">{t('nav.contacts')}</NavLinksR>
               </NavItem>
               <Lang>
                 <ReactFlagsSelect
                   countries={["GB", "RU"]}
                   customLabels={{ GB: "EN", RU: "RU"}}
                   placeholder=""
-                  selected={language}
+                  selected={i18n.language}
                   onSelect={(code) => {
                   changeLanguage(code)
                             }}/>

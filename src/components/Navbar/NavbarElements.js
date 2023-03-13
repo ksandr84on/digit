@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Link as LinkR } from 'react-router-dom';
+import { NavLink as LinkR } from 'react-router-dom';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
@@ -78,7 +78,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  height: 50px;
 `;
 
 export const NavLinks = styled(LinkS)`
@@ -99,12 +99,42 @@ export const NavLinks = styled(LinkS)`
   }
 `;
 
+export const NavLinksR = styled(LinkR)`
+  
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  &:hover {
+    color: #06C2B9;
+  }
+
+  &.active {
+    border-bottom: 3px solid #06C2B9;
+  }
+`;
+
+export const NavLinksLogo = styled(LinkR)`
+  
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 1rem 1rem;
+  height: 100%;
+  cursor: pointer;
+
+`;
+
 export const Lang = styled.nav`
  
 align-items: center;
 display: flex;
 
 margin-top: 0.5rem;
+padding: 1rem 1rem;
 
   cursor: pointer;
 
@@ -153,6 +183,7 @@ export const NavBtnLink = styled(LinkR)`
 `
 
 export const DropDown = styled.div`
+height: 50px;
 position: relative;
 display: inline-block;
 &:hover {
@@ -172,21 +203,3 @@ padding: 22px 16px;
 box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 2);
 z-index: 1;
 `
-
-export const NavLinksD = styled(LinkS)`
-  color: #fff;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 8px 0px;
-  height: 100%;
-  cursor: pointer;
-
-  &:hover {
-    color: #06C2B9;
-  }
-
-  &.active {
-    border-bottom: 3px solid #06C2B9;
-  }
-`;

@@ -10,7 +10,7 @@ import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/
 
 
 
-const Home = () => {
+const ContactPage = () => {
   const [isOpen, setIsOpen] = useState(false);
 
 
@@ -21,20 +21,20 @@ const Home = () => {
 
 
 
+
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle}/>
-      <HeroSection />
-      <InfoSection {...homeObjOne} />
+      {/* <HeroSection language={language} changeLanguage={changeLanguage} /> */}
+      {/* <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
-     
-      <Services />
-      <Team />
+      <Services /> */}
+      {/* <Team /> */}
       <InfoSection {...homeObjThree} />
       <Footer />
     </>
   );
 };
 
-export default Home;
+export default ContactPage;

@@ -3,7 +3,7 @@ import Video from './video.mp4';
 import { Button } from '../ButtonElements';
 import { HeroContainer, HeroBg, Lang2, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
 
-import ReactFlagsSelect from "react-flags-select";
+
 import { useTranslation } from 'react-i18next';
 
 const HeroSection = ({changeLanguage, language}) => {
@@ -40,16 +40,7 @@ const HeroSection = ({changeLanguage, language}) => {
             {t('main.learnmore')} {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>
         </HeroBtnWrapper>
-     
-        <Lang2> <ReactFlagsSelect
-    countries={["GB", "RU"]}
-    customLabels={{ GB: "EN", RU: "RU"}}
-    placeholder=""
-    selected={language}
-    onSelect={(code) => {
-      changeLanguage(code)
-    }}
-  /> </Lang2>
+
       </HeroContent>
 
     </HeroContainer>

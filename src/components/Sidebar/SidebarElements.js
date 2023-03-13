@@ -48,7 +48,7 @@ export const SidebarMenu = styled.ul`
   }
 `;
 
-export const SidebarLink = styled(LinkS)`
+export const SidebarLink = styled(LinkR)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -65,11 +65,17 @@ export const SidebarLink = styled(LinkS)`
     color: #06C2B9;
     transition: 0.2s ease-in-out;
   }
+
+  &.active {
+    color: #06C2B9;
+  }
 `;
 
 export const SideBtnWrap = styled.div`
   display: flex;
   justify-content: center;
+  color: #000;
+  margin-top: 20px;
 `;
 export const SidebarRoute = styled(LinkR)`
   border-radius: 50px;
@@ -90,3 +96,5 @@ export const SidebarRoute = styled(LinkR)`
     color: #010606;
   }
 `;
+
+
