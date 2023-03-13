@@ -29,6 +29,14 @@
 
     },
 
+    "contacts": {
+      "tittle": "How Can We Help?",
+      "tittle2": "Contact Us",
+      "main": "Get in touch with us to discuss your business needs",
+      "button": "Contact Us"
+
+    },
+
     "chooseus": {
       "tittle": "Why choose us?",
       "reliability": "Reliability",

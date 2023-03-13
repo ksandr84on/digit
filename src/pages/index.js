@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 import { homeObjOne, homeObjTwo, homeObjThree } from '../components/InfoSection/Data';
 import About from '../components/About'
 import TeamNew from '../components/TeamNew'
-
+import Contacts from '../components/Contacts'
 
 
 const Home = () => {
@@ -35,7 +35,7 @@ const Home = () => {
      
       <Services />
     
-      <InfoSection {...homeObjThree} />
+     <Contacts />
       <Footer />
     </>
   );
