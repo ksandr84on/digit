@@ -74,6 +74,19 @@
       "consult": "IT Consulting",
       "consult2": "From designing and developing technology to implementing and managing systems or processes"
 
+    },
+
+    "footer": {
+      "home": "Home",
+      "homelink": "Main page",
+      "services": "Our Services",
+      "it": "IT Equipment and Supplies",
+      "lab": "Educational and Lab Equipment",
+      "stage": "Stage and Media Equipment",
+      "soft": "Software development",
+      "consult": "IT Consulting",
+      "contact": "Contact Us",
+      "contactlink": "Contacts"
     }
     
   }
