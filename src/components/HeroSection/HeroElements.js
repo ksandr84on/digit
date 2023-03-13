@@ -36,11 +36,6 @@ export const HeroBg = styled.div`
 `;
 
 export const VideoBg = styled.video`
-display: block;
-
-  @media screen and (max-width: 850px) {
-    display: none
-  }
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
