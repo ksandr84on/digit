@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import Video from './video.mp4';
+
 import { Button } from '../ButtonElements';
-import { HeroContainer, HeroBg, Lang2, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
+import { HeroContainer, HeroBg, VideoBg, HeroContent, HeroH1, HeroP, HeroBtnWrapper, ArrowForward, ArrowRight } from './HeroElements';
 
 
 import { useTranslation } from 'react-i18next';
@@ -19,7 +20,7 @@ const HeroSection = ({changeLanguage, language}) => {
   return (
     <HeroContainer id='home'>
       <HeroBg>
-        <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
         <HeroH1>{t('hero.tittle1')}</HeroH1>
