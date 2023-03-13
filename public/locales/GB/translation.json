@@ -28,6 +28,23 @@
       "button": "Our Secret"
 
     },
+
+    "chooseus": {
+      "tittle": "Why choose us?",
+      "reliability": "Reliability",
+      "reliability2": "We supply hardware and develop software that meets the best quality standards",
+      "punctuality": "Punctuality",
+      "punctuality2": "Delivering your project on time",
+      "service": "Personal service",
+      "service2": "We have solutions that are exactly the right fit for your business.",
+      "flex": "Flexibility",
+      "flex2": "Getting workable solutions to impossible problems",
+      "support": "Support",
+      "support2": "We support the entire project, from requesting to commissioning the solution",
+      "team": "Team",
+      "team2": "Our team consists of over 50 highly qualified specialists"
+    },
+
     "teamnew": {
       "tittle": "Team",
       "tittle2": "Digit, LLC",

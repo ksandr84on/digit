@@ -3,11 +3,12 @@ import styled from 'styled-components';
 export const TeamContainer = styled.div`
 
   height: 100%;
+  margin-bottom: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #f9f9f9;
+  background: #fff;
 
 
 
