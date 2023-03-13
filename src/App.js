@@ -10,7 +10,8 @@ import StageEq from './pages/stageeq';
 import Dev from './pages/dev';
 import Consulting from './pages/consulting';
 
-function App() {
+
+function App({ t }) {
 
   return (
     <Router>

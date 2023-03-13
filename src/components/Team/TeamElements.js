@@ -16,20 +16,21 @@ export const TeamContainer = styled.div`
 
 export const TeamWrapper = styled.div`
   max-width: 1300px;
-  margin: 0 auto;
+ 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
   grid-gap: 16px; /* sets the gaps (gutters) between rows and columns; shorthand for row-gap and column-gap */
-
+  padding: 0px 40px;
 
   @media screen and (max-width: 1000px) {
     grid-template-columns: 1fr 1fr;
+    padding: 0px 30px;
   }
 
   @media screen and (max-width: 768px) {
     grid-template-columns: 1fr;
-    padding: 0 20px;
+    padding: 0px 30px;
   }
 `;
 

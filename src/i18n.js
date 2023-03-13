@@ -6,6 +6,17 @@
   // don't want to use this?
   // have a look at the Quick start guide 
   // for passing in lng and translations on init
+  import translationGB from './locales/GB/translation.json';
+  import translationRU from './locales/RU/translation.json';
+
+  const resources = {
+    GB: {
+      translation: translationGB
+    },
+    RU: {
+      translation: translationRU
+    }
+  };
   
   i18n
   
@@ -24,6 +35,7 @@
       react: { 
       useSuspense: false //   <---- this will do the magic
     },
+      resources,
       lng: 'RU',
       fallbackLng: 'RU',
       debug: true,

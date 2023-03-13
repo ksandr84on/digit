@@ -2,11 +2,13 @@ import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
 import { FooterContainer, FooterWrap, FooterLinksContainer, LogoIcon1, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, } from './FooterElements';
 import LogoTop from '../../images/logo.svg';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
   const toggleHome = () => {
     scroll.scrollToTop();
   };
+  const { t } = useTranslation();
 
   return (
     <FooterContainer>
