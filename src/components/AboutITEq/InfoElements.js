@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const InfoContainer = styled.div`
   color: #fff;
   background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
-
+height: 100vh;
   @media screen and (max-width: 768px) {
     padding: 100px 0;
   }
@@ -18,7 +18,9 @@ export const InfoWrapper = styled.div`
   margin-right: auto;
   margin-left: auto;
   padding: 0 24px;
+
   justify-content: center;
+ 
 `;
 
 export const InfoRow = styled.div`
@@ -47,7 +49,7 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
   max-width: 540px;
-  padding-top: 120px;
+  padding-top: 0;
   padding-bottom: 60px;
 `;
 
@@ -79,7 +81,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 540px;
+  max-width: 440px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
@@ -92,9 +94,8 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 515px;
+  max-width: 555px;
   height: 100%;
-  padding-top: 100px;
 `;
 
 export const Img = styled.img`
