@@ -13,7 +13,7 @@ const AboutLabEq = () => {
   const topLine= t('aboutlab.tittle');
   const headline= t('aboutlab.tittle2');
   const description= t('aboutlab.main');
-  const description2= t('aboutlab.main2');
+
   const description3= t('aboutlab.main3');
   const description4= t('aboutlab.main4');
   const description5= t('aboutlab.main5');
@@ -35,7 +35,7 @@ const AboutLabEq = () => {
               <TopLine>{topLine}</TopLine>
               <Heading lightText={lightText}>{headline}</Heading>
               <Subtitle darkText={darkText}>{description}</Subtitle>
-              <Subtitle darkText={darkText}>{description2}</Subtitle>
+           
               <Subtitle darkText={darkText}>{description3}</Subtitle>
               <Subtitle darkText={darkText}>{description4}</Subtitle>
               <Subtitle darkText={darkText}>{description5}</Subtitle>

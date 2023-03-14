@@ -47,7 +47,7 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
   max-width: 540px;
-  padding-top: 130px;
+  padding-top: 120px;
   padding-bottom: 60px;
 `;
 
@@ -92,8 +92,9 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  max-width: 515px;
 padding-top: 100px;
+height: 100%;
 `;
 
 export const Img = styled.img`
