@@ -1,10 +1,12 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import { FooterContainer, FooterWrap, FooterLinksContainer, LogoIcon1, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, WebsiteRights, } from './FooterElements';
+import { FooterContainer, FooterWrap, FooterLinksContainer, LogoIcon1, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, WebsiteRights, 
+  SocialMedia, SocialMediaWrap, SocialLogo, SocialIcons, SocialIconLink} from './FooterElements';
 import LogoTop from '../../images/logo.svg';
 import LogoTopRu from '../../images/logoru.svg';
 import { useTranslation } from 'react-i18next';
 import i18n from "../../i18n";
+import {FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube} from "react-icons/fa";
 
 const Footer = () => {
   const toggleHome = () => {
@@ -15,46 +17,38 @@ const Footer = () => {
   return (
     <FooterContainer>
       <FooterWrap>
-        <FooterLinksContainer>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-            { (i18n.language==="RU") ? 
+     
+{/* 
+        <SocialMedia> */}
+					{/* <SocialMediaWrap> */}
+          { (i18n.language==="RU") ? 
             (  <LogoIcon1 src={LogoTopRu} onClick={toggleHome}/>) : 
             (  <LogoIcon1 src={LogoTop} onClick={toggleHome}/>) 
             }
-         
-          
-            </FooterLinkItems>
-            <FooterLinkItems>
+						<WebsiteRights>Digit, LLC © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
+						{/* <SocialIcons>
+							<SocialIconLink href="/" target="_blank" aria-label="Facebook">
+								<FaFacebook/>
+							</SocialIconLink>
 
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-          <FooterLinksWrapper>
-            <FooterLinkItems>
-              <FooterLinkTitle>{t('footer.services')}</FooterLinkTitle>
-                <FooterLink to='/it-equipment'>{t('footer.it')}</FooterLink>
-                <FooterLink to='/labs-equipment'>{t('footer.lab')}</FooterLink>
-                <FooterLink to='/stage-equipment'>{t('footer.stage')}</FooterLink>
-              
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>{t('footer.services')}</FooterLinkTitle>
-                <FooterLink to='/development'>{t('footer.soft')}</FooterLink>
-                <FooterLink to='/consulting'>{t('footer.consult')}</FooterLink>
-           
-            </FooterLinkItems>
-            <FooterLinkItems>
-              <FooterLinkTitle>{t('footer.contact')}</FooterLinkTitle>
-             
-                <FooterLink to='/contacts'>{t('footer.contactlink')}</FooterLink>
-               
-            </FooterLinkItems>
-            <FooterLinkItems>
-            <WebsiteRights>Digit LLC {new Date().getFullYear()} </WebsiteRights>
-            <WebsiteRights>&copy; All rights reserved</WebsiteRights>
-            </FooterLinkItems>
-          </FooterLinksWrapper>
-        </FooterLinksContainer>
+							<SocialIconLink href="/" target="_blank" aria-label="Instagram">
+								<FaInstagram/>
+							</SocialIconLink>
+
+							<SocialIconLink href="/" target="_blank" aria-label="You Tube">
+								<FaYoutube/>
+							</SocialIconLink>
+
+							<SocialIconLink href="/" target="_blank" aria-label="Twitter">
+								<FaTwitter/>
+							</SocialIconLink>
+
+							<SocialIconLink href="/" target="_blank" aria-label="Linkedin">
+								<FaLinkedin/>
+							</SocialIconLink>
+						</SocialIcons> */}
+					{/* </SocialMediaWrap> */}
+				{/* </SocialMedia> */}
    
       </FooterWrap>
     </FooterContainer>

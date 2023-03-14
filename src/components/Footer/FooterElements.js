@@ -25,14 +25,13 @@ export const FooterLinksContainer = styled.div`
 `;
 
 export const LogoIcon1 = styled.img`
-  width: 150px;
+  width: 100px;
   justify-self: flex-start;
   cursor: pointer;
   display: flex;
  
-  margin-left: 24px;
-  margin-bottom: 10px
-  margin-top: 10px;;
+ 
+
 `;
 
 export const FooterLinksWrapper = styled.div`
@@ -48,7 +47,7 @@ export const FooterLinkItems = styled.div`
   flex-direction: column;
   align-items: flex-start;
   margin: 16px;
-  text-align: left;
+  text-align: center;
   width: 170px;
   box-sizing: border-fox;
   color: #fff;

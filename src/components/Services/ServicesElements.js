@@ -2,6 +2,10 @@ import styled from 'styled-components';
 
 export const ServicesContainer = styled.div`
   height: 100vh;
+
+  @media screen and (max-width: 1000px) {
+    height: 100%;
+  }
   min-height: 900px;
   display: flex;
   flex-direction: column;
