@@ -54,8 +54,8 @@ export const TeamCard = styled.div`
 `;
 
 export const TeamIcon = styled.img`
-  height: 160px;
-  width: 160px;
+  height: 130px;
+  width: 130px;
   border-radius: 50%;
   border: 2px solid #06C2B9;
   margin-bottom: 10px;
