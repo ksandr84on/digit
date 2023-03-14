@@ -37,7 +37,7 @@ const About = () => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-120}
+                offset={-105}
                 primary={primary ? 1 : 0}
                 dark={dark ? 1 : 0}
                 dark2={0}

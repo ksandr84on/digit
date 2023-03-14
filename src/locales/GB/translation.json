@@ -10,8 +10,8 @@
       "development": "Software Development",
       "home": "Home",
       "iteq": "IT equipment",
-      "labeq": "Educational & Labs Equipment",
-      "stageeq": "Stage & Media Equipment"
+      "labeq": "Educational & Labs",
+      "stageeq": "Stage & Media"
 
     },
     "hero": {
