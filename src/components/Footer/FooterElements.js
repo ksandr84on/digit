@@ -29,6 +29,7 @@ export const LogoIcon1 = styled.img`
   justify-self: flex-start;
   cursor: pointer;
   display: flex;
+  padding-bottom: 12px;
  
  
 

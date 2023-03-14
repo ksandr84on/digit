@@ -25,6 +25,7 @@ const Footer = () => {
             (  <LogoIcon1 src={LogoTopRu} onClick={toggleHome}/>) : 
             (  <LogoIcon1 src={LogoTop} onClick={toggleHome}/>) 
             }
+            
 						<WebsiteRights>Digit, LLC © {new Date().getFullYear()} All rights reserved.</WebsiteRights>
 						{/* <SocialIcons>
 							<SocialIconLink href="/" target="_blank" aria-label="Facebook">
