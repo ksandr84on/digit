@@ -32,12 +32,12 @@ const TeamNew = () => {
               <Heading lightText={lightText}>{headline}</Heading>
               <Subtitle darkText={darkText}>{description}</Subtitle>
               <BtnWrap>
-                <Button to="services"
+                <Button to="whyus"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-80}
+                offset={-10}
                 primary={primary ? 1 : 0}
                 dark={dark ? 1 : 0}
                 dark2={0}

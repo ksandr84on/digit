@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({lightBg}) => (lightBg ? '#fff' : '#010606')};
+  background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 
   @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -12,13 +12,12 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 100%;
+  height: 900px;
   width: 100%;
-  margin-width: 1200px;
+  margin-width: 1100px;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 100px;
-  padding: 0 0px;
+  padding: 0 24px;
   justify-content: center;
 `;
 
@@ -47,7 +46,7 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 600px;
+  max-width: 540px;
   padding-top: 0;
   padding-bottom: 60px;
 `;
@@ -60,13 +59,13 @@ export const TopLine = styled.p`
   letter-spacing: 1.4px;
   text-transform: uppercase;
   margin-bottom: 16px;
- 
 `;
 
 export const Heading = styled.h1`
   margin-bottom: 24px;
-  font-size: 40px;
-
+  font-size: 48px;
+ 
+ 
   color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
 
   @media screen and (max-width: 768px) {
@@ -93,7 +92,7 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 600px;
+  max-width: 555px;
   height: 100%;
 `;
 

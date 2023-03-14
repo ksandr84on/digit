@@ -21,15 +21,57 @@
     "main": {
       "learnmore" : "Learn More"
     },
-    "about": {
+    "aboutit": {
       "tittle": "Who We Are",
       "tittle2": "About Digit Company",
       "main": "We are an IT Consultancy, Equipment supplier and Software developer based in the Moscow, Russia. Our company operates in B2G and B2B markets since 2017 and has more than 200 successfully realized projects. We tailor our solutions to meet your unique needs, goals and expectations",
       "button": "Our Secret"
 
     },
+    "aboutlab": {
+      "tittle": "Who We Are",
+      "tittle2": "About Digit Company",
+      "main": "We are an IT Consultancy, Equipment supplier and Software developer based in the Moscow, Russia. Our company operates in B2G and B2B markets since 2017 and has more than 200 successfully realized projects. We tailor our solutions to meet your unique needs, goals and expectations",
+      "button": "Our Secret"
+
+    },
+    "aboutstage": {
+      "tittle": "Who We Are",
+      "tittle2": "About Digit Company",
+      "main": "We are an IT Consultancy, Equipment supplier and Software developer based in the Moscow, Russia. Our company operates in B2G and B2B markets since 2017 and has more than 200 successfully realized projects. We tailor our solutions to meet your unique needs, goals and expectations",
+      "button": "Our Secret"
+
+    },
+    "aboutdev": {
+      "tittle": "Who We Are",
+      "tittle2": "About Digit Company",
+      "main": "We are an IT Consultancy, Equipment supplier and Software developer based in the Moscow, Russia. Our company operates in B2G and B2B markets since 2017 and has more than 200 successfully realized projects. We tailor our solutions to meet your unique needs, goals and expectations",
+      "button": "Our Secret"
+
+    },
+    "aboutcons": {
+      "tittle": "Who We Are",
+      "tittle2": "About Digit Company",
+      "main": "We are an IT Consultancy, Equipment supplier and Software developer based in the Moscow, Russia. Our company operates in B2G and B2B markets since 2017 and has more than 200 successfully realized projects. We tailor our solutions to meet your unique needs, goals and expectations",
+      "button": "Our Secret"
+
+    },
+    "about": {
+      "tittle": "Who We Are",
+      "tittle2": "About Digit Company",
+      "main": "We are an IT Consultancy, Equipment supplier and Software developer based in the Moscow, Russia. Our company operates in B2G and B2B markets since 2017 and has more than 200 successfully realized projects. We tailor our solutions to meet your unique needs, goals and expectations",
+      "button": "Next"
+
+    },
 
     "contacts": {
+      "tittle": "How Can We Help?",
+      "tittle2": "Contact Us",
+      "main": "Get in touch with us to discuss your business needs",
+      "button": "Contact Us"
+
+    },
+    "contacts2": {
       "tittle": "How Can We Help?",
       "tittle2": "Contact Us",
       "main": "Get in touch with us to discuss your business needs",
@@ -57,7 +99,7 @@
       "tittle": "Team",
       "tittle2": "Digit, LLC",
       "main": "All our employees have experience of working on both large-scale socially significant projects and non-traditional requests. We have been involved in projects from software development for federal agencies of the Russian Federation to the equipment of the mobile planetarium at the children's technology park 'Quantorium'",
-      "button": "Our Services"
+      "button": "Our Secret"
 
     },
 
