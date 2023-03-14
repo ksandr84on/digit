@@ -1,6 +1,6 @@
 import React from 'react';
 import { animateScroll as scroll } from 'react-scroll';
-import { FooterContainer, FooterWrap, FooterLinksContainer, LogoIcon1, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, } from './FooterElements';
+import { FooterContainer, FooterWrap, FooterLinksContainer, LogoIcon1, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, WebsiteRights, } from './FooterElements';
 import LogoTop from '../../images/logo.svg';
 import LogoTopRu from '../../images/logoru.svg';
 import { useTranslation } from 'react-i18next';
@@ -26,8 +26,7 @@ const Footer = () => {
           
             </FooterLinkItems>
             <FooterLinkItems>
-              {/* <FooterLinkTitle>{t('footer.home')}</FooterLinkTitle>
-                <FooterLink to='our process'>{t('footer.homelink')}</FooterLink> */}
+
             </FooterLinkItems>
           </FooterLinksWrapper>
           <FooterLinksWrapper>
@@ -46,9 +45,9 @@ const Footer = () => {
             </FooterLinkItems>
             <FooterLinkItems>
               <FooterLinkTitle>{t('footer.contact')}</FooterLinkTitle>
-                <FooterLink>
+             
                 <FooterLink to='/contacts'>{t('footer.contactlink')}</FooterLink>
-                </FooterLink>
+               
             </FooterLinkItems>
             <FooterLinkItems>
             <WebsiteRights>Digit LLC {new Date().getFullYear()} </WebsiteRights>

@@ -20,7 +20,7 @@ const HeroSection = ({changeLanguage, language}) => {
   return (
     <HeroContainer id='home'>
       <HeroBg>
-         <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
+         <VideoBg autoPlay loop muted playsInline src={Video} type='video/mp4' />
       </HeroBg>
       <HeroContent>
         <HeroH1>{t('hero.tittle1')}</HeroH1>
