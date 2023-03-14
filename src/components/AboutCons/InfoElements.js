@@ -47,7 +47,7 @@ export const Column2 = styled.div`
 
 export const TextWrapper = styled.div`
   max-width: 540px;
-  padding-top: 120px;
+  padding-top: 150px;
   padding-bottom: 60px;
 `;
 
@@ -79,7 +79,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 540px;
+  max-width: 515px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;

@@ -58,10 +58,10 @@
 
     },
     "aboutcons": {
-      "tittle": "Who We Are",
-      "tittle2": "About Digit Company",
-      "main": "We are an IT Consultancy, Equipment supplier and Software developer based in the Moscow, Russia. Our company operates in B2G and B2B markets since 2017 and has more than 200 successfully realized projects. We tailor our solutions to meet your unique needs, goals and expectations",
-      "button": "Our Secret"
+      "tittle": "IT Консалтинг",
+      "tittle2": "IT Решения, которые приносят результат",
+      "main": "Технологии для поддержки вашего бизнеса должны быть современными и простыми, чтобы адаптироваться к росту или изменениям. При наиболее эффективном использовании ИТ систем ваш бизнес сможет быстро адаптироваться к меняющимся приоритетам и использовать новые возможности. Команда ООО 'ЦИФРА' поможет вам в принятии правильных решений для достижения ваших целей.",
+      "button": "Задать вопрос"
 
     },
     "about": {
@@ -80,10 +80,14 @@
 
     },
     "contacts2": {
-      "tittle": "How Can We Help?",
-      "tittle2": "Contact Us",
-      "main": "Get in touch with us to discuss your business needs",
-      "button": "Contact Us"
+      "tittle": "Get in touch",
+      "tittle2": "We are online",
+      "tel": "+7 (499) 649-77-07",
+      "mail": "info@digitcompany.ru",
+      "address": "Rublevskoye highway, 95/1, Moscow, Russia",
+      "time": "9.00 a.m. - 06.00 p.m.",
+      "button": "Call Us",
+      "button2": "Mail Us"
 
     },
 
