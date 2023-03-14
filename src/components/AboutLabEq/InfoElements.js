@@ -12,7 +12,7 @@ export const InfoContainer = styled.div`
 export const InfoWrapper = styled.div`
   display: grid;
   z-index: 1;
-  height: 900px;
+  height: 100%;
   width: 100%;
   margin-width: 1100px;
   margin-right: auto;
@@ -46,8 +46,8 @@ export const Column2 = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
-  padding-top: 0;
+  max-width: 590px;
+  padding-top: 110px;
   padding-bottom: 60px;
 `;
 
@@ -79,7 +79,7 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
+  max-width: 550px;
   margin-bottom: 35px;
   font-size: 18px;
   line-height: 24px;
@@ -92,7 +92,7 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
+  max-width: 515px;
   height: 100%;
 `;
 

@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from '../ButtonElements';
-import img from '../../images/about.svg';
+import { ButtonR } from '../ButtonElements';
+import img from '../../images/aboutstage.svg';
 import { InfoContainer, InfoWrapper, InfoRow, Column1, Column2, TextWrapper, TopLine, Heading, Subtitle, BtnWrap, ImgWrap, Img } from './InfoElements';
 import { useTranslation } from 'react-i18next';
 
@@ -13,6 +13,8 @@ const AboutStageEq = () => {
   const topLine= t('aboutstage.tittle');
   const headline= t('aboutstage.tittle2');
   const description= t('aboutstage.main');
+  const description2= t('aboutstage.main2');
+  const description3= t('aboutstage.main3');
   const buttonLabel= t('aboutstage.button');
   const imgStart= false;
   const alt= '';
@@ -31,17 +33,18 @@ const AboutStageEq = () => {
               <TopLine>{topLine}</TopLine>
               <Heading lightText={lightText}>{headline}</Heading>
               <Subtitle darkText={darkText}>{description}</Subtitle>
+              <Subtitle darkText={darkText}>{description2}</Subtitle>
+              <Subtitle darkText={darkText}>{description3}</Subtitle>
               <BtnWrap>
-                <Button to="whyus"
-                smooth={true}
-                duration={500}
-                spy={true}
-                exact="true"
+                <ButtonR to="/contacts"
+          
+            
+            
                 offset={-80}
                 primary={primary ? 1 : 0}
                 dark={dark ? 1 : 0}
                 dark2={0}
-                >{buttonLabel}</Button>
+                >{buttonLabel}</ButtonR>
               </BtnWrap>
             </TextWrapper>
             </Column1>

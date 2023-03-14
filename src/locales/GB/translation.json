@@ -22,24 +22,32 @@
       "learnmore" : "Learn More"
     },
     "aboutit": {
-      "tittle": "Who We Are",
-      "tittle2": "About Digit Company",
-      "main": "We are an IT Consultancy, Equipment supplier and Software developer based in the Moscow, Russia. Our company operates in B2G and B2B markets since 2017 and has more than 200 successfully realized projects. We tailor our solutions to meet your unique needs, goals and expectations",
-      "button": "Our Secret"
+      "tittle": "IT Оборудование",
+      "tittle2": "IT-интегратор и поставщик оборудования",
+"main": "Занимается поставкой оборудования для бизнеса в любой регион России. Большой опыт работы с коммерческими и государственными заказчиками. Выполнение масштабных проектов и участие в федеральных программах.",
+      "main2": "Поставим IT-оборудование, в том числе по параллельному импорту, либо подберем отечественные решения",
+      "main3": "Разработаем и внедрим любое IT-решение, автоматизируем Ваше предприятие",
+      "button": "Связаться с нами"
 
     },
     "aboutlab": {
-      "tittle": "Who We Are",
-      "tittle2": "About Digit Company",
-      "main": "We are an IT Consultancy, Equipment supplier and Software developer based in the Moscow, Russia. Our company operates in B2G and B2B markets since 2017 and has more than 200 successfully realized projects. We tailor our solutions to meet your unique needs, goals and expectations",
-      "button": "Our Secret"
+      "tittle": "Учебное и лабороторное оборудование",
+      "tittle2": "Для школ, ВУЗов и университетов",
+      "main": "Современные учебные кабинеты – это хорошо продуманные удобные помещения для занятий, оборудованные необходимыми демонстрационными материалами, лабораторными приборами и специальным оборудованием.",
+      "main2": "Реализуем проекты любой сложности, поставляем только сертифицированное и проверенное оборудование, которое:", 
+      "main3": "Имеет гарантии от производителя;",
+      "main4": "Соответствует требованиям предъявляемые ФГОС (Федеральные государственные образовательные стандарты); ",
+      "main5": "Имеет описание технических характеристик и материалов изготовления; ",
+      "button": "Консультация"
 
     },
     "aboutstage": {
-      "tittle": "Who We Are",
-      "tittle2": "About Digit Company",
-      "main": "We are an IT Consultancy, Equipment supplier and Software developer based in the Moscow, Russia. Our company operates in B2G and B2B markets since 2017 and has more than 200 successfully realized projects. We tailor our solutions to meet your unique needs, goals and expectations",
-      "button": "Our Secret"
+      "tittle": "Сценическое оборудование и мультимедиа",
+      "tittle2": "Профессиональное оборудование",
+      "main": "ООО 'ЦИФРА' предлагает комплексные решения по оснащению объектов любой сложности звуковым, световым, видео и мультимедиа оборудованием.",
+      "main2":"Выполняем все необходимые расчеты, даем рекомендаци по отделке залов.",
+      "main3": "Проектируем звукокомплексы, поставляем оборудование ведущих мировых и отечественных производителей.",
+      "button": "Связаться с Нами"
 
     },
     "aboutdev": {
